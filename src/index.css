@@ -7,3 +7,10 @@
   box-sizing: border-box;
   font-family: Manrope, sans-serif;
 }
+
+@layer components{
+    .align-content{
+        @apply mx-auto max-w-6xl px-8
+    }
+}
+

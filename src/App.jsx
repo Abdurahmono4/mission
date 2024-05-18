@@ -36,14 +36,13 @@ function App() {
   return (
     <div>
       <Routes>
-        <Route path="/login" element={<Login></Login>}></Route>
-        <Route path="/register" element={<Register></Register>}></Route>
-        {/* <Route path="/salom" element={<Salom></Salom>}></Route> */}
+        <Route path="/login" element={<Login />}></Route>
+        <Route path="/register" element={<Register />}></Route>
         <Route
           path="/"
           element={
             <ProtectedRoute isAuthentication={token ? true : false}>
-              <Home></Home>
+              <Home />
             </ProtectedRoute>
           }
         ></Route>
@@ -59,7 +58,7 @@ function App() {
           path="/XX57"
           element={
             <ProtectedRoute isAuthentication={token ? true : false}>
-              <XX57></XX57>
+              <XX57 />
             </ProtectedRoute>
           }
         ></Route>
@@ -67,7 +66,7 @@ function App() {
           path="/headphonesMain"
           element={
             <ProtectedRoute isAuthentication={token ? true : false}>
-              <HeadphonesMain></HeadphonesMain>
+              <HeadphonesMain />
             </ProtectedRoute>
           }
         ></Route>
